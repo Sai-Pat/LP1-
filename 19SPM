@@ -1,0 +1,135 @@
+🧭 Step 1: Open or Create the Project
+
+Log in to ProjectManager.com
+.
+
+In the sidebar, click Projects → All Projects.
+
+If the project already exists (e.g., “First-Year Admission of Engineering”), click it.
+
+If not, click New Project → Blank Project and name it:
+
+First-Year Admission of Engineering
+
+Set the Start Date (for example, today’s date).
+
+Click Create Project.
+
+🧱 Step 2: Create the Project Tasks (if not already done)
+
+You can create a simple structure like this:
+
+#	Task Name	Duration
+1	Admission Announcement	2 days
+2	Application Collection	10 days
+3	Entrance Test	3 days
+4	Evaluation & Shortlisting	5 days
+5	Interview Process	4 days
+6	Final Admission List	2 days
+7	Fee Collection	5 days
+8	Orientation	2 days
+
+Add these tasks in Gantt or List view.
+You can also define dependencies (e.g., Entrance Test can’t start before Application Collection ends).
+
+🧭 Step 3: Update “% Complete” with Current Task Status
+
+Now that your project is in progress:
+
+Go to Gantt View or List View.
+
+You’ll see a column labeled % Complete (if not, click Columns → Add Column → % Complete).
+
+For each task, update progress:
+
+Admission Announcement → 100% (finished)
+
+Application Collection → 60% (in progress)
+
+Entrance Test → 0% (not started)
+
+Evaluation & Shortlisting → 0%
+
+Interview Process → 0%
+
+Final Admission List → 0%
+
+Fee Collection → 0%
+
+Orientation → 0%
+
+This simulates real progress — some tasks are done, others ongoing.
+
+📊 Step 4: Review the Status of Each Task
+
+Click Dashboard or Overview tab.
+
+You’ll see:
+
+Tasks by Status (Not Started, In Progress, Completed)
+
+Progress Summary
+
+Upcoming Deadlines
+
+Check if any task is delayed or behind schedule — ProjectManager shows red indicators for those.
+
+✅ Tip: Hover over each task in the Gantt chart to see actual vs. planned dates.
+
+🕒 Step 5: Compare Planned vs. Critical Path
+
+The Critical Path is the sequence of tasks that directly affect your project’s finish date.
+
+In Gantt View, click Options → Show Critical Path (this highlights critical tasks in red).
+
+Look at:
+
+Which tasks are on the critical path (usually Application → Test → Evaluation → Interview → Final List).
+
+Are any of these delayed or still incomplete?
+
+Compare current progress (from your % complete updates) with planned timeline:
+
+If a critical task is behind, your end date will slip.
+
+If non-critical tasks are delayed, the overall project might still be on time.
+
+👥 Step 6: Review Resource Assignment Status
+
+Go to Resources → Workload (or Team View).
+
+You’ll see all assigned people and how busy they are.
+
+Green: balanced workload
+
+Red: over-allocated (too much work)
+
+Check if someone is overbooked or has no assigned work.
+
+For example:
+
+“Admission Officer” might have 3 overlapping tasks.
+
+“IT Support” might have none until the entrance test.
+
+You can reassign or balance resources by dragging tasks to other people or changing assignment under the Task → Resources column.
+
+🧩 Step 7: Monitor and Adjust
+
+As days progress:
+
+Keep updating % Complete daily or weekly.
+
+Check Dashboard → Schedule Performance for slippage.
+
+Review Critical Path often — if it shifts, adjust dependent tasks.
+
+Communicate with team if something is delayed (ProjectManager lets you comment directly on tasks).
+
+📈 Step 8: (Optional) Create a Baseline Comparison
+
+If you created a baseline earlier (before execution), you can now:
+
+Click Gantt View → Options → Compare to Baseline.
+
+This shows planned vs actual visually — lines or bars showing delays or early completions.
