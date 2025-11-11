@@ -1,0 +1,151 @@
+Step 1: Create the Project
+
+Log in to ProjectManager.com
+.
+
+Go to Projects → New Project.
+
+Enter:
+
+Project Name: Ticket Management System
+
+Start Date: (choose a planned start date)
+
+Click Create Project.
+
+Step 2: Define Tasks
+
+Switch to Gantt View and add tasks:
+
+#	Task Name	Duration (days)	Notes
+1	Project Initiation	2	Define scope, stakeholders
+2	Requirements Gathering	5	Ticket types, user roles, workflows
+3	System Design	6	Database schema, UI/UX
+4	Development	15	Coding ticket creation, tracking, notifications
+5	Testing	6	Functional, integration, UAT
+6	Deployment	3	Go live in production
+7	Training & Documentation	4	User manuals, training sessions
+8	Project Closure	2	Review, handover
+Step 3: Define Dependencies
+
+Link tasks in Gantt View so each task starts after the previous one:
+
+Project Initiation → Requirements Gathering → System Design → Development → Testing → Deployment → Training & Documentation → Project Closure
+
+
+Drag lines from the end of one task to the start of the next to create dependencies.
+
+Step 4: Assign Resources
+
+Go to Resources → Add Resource.
+
+Example resources:
+
+Resource Name	Type
+Project Manager	Work
+System Analyst	Work
+Developer	Work
+Tester	Work
+Trainer	Work
+
+Assign resources to tasks:
+
+Task	Assigned Resource
+Project Initiation	Project Manager
+Requirements Gathering	System Analyst
+System Design	System Analyst, Developer
+Development	Developer
+Testing	Tester
+Deployment	Developer
+Training & Documentation	Trainer
+Project Closure	Project Manager
+Step 5: Define Milestones
+
+Add 0-day tasks as milestones:
+
+Milestone	After Task
+Requirements Approved	Requirements Gathering
+Design Completed	System Design
+System Live	Deployment
+Project Closed	Project Closure
+Step 6: Set Project Calendar
+
+Go to Settings → Calendar.
+
+Set:
+
+Working days: Monday–Friday
+
+Working hours: 9 AM – 5 PM
+
+Holidays: as needed
+
+Apply to the project.
+
+Step 7: Baseline the Project
+
+Go to Gantt → More Options → Set Baseline.
+
+This will allow comparison of planned vs actual later (important for Earned Value and slipping tasks).
+
+Step 8: Assign Costs (Optional but needed for cost reports)
+
+Assign a cost per resource (e.g., hourly rate) in Resources → Edit Resource.
+
+This enables ProjectManager.com to calculate:
+
+Resource Cost Overview
+
+Task Cost Overview
+
+Earned Value Report
+
+Step 9: Generate Cost Reports
+
+Go to Reports → Cost Reports.
+
+Generate the following:
+
+Earned Value Report (EV) → Compare Planned Value (PV), Earned Value (EV), Actual Cost (AC), Cost Variance (CV), and Schedule Variance (SV)
+
+Resource Cost Overview → Cost per resource vs planned
+
+Task Cost Overview → Cost per task vs planned
+
+Step 10: Generate Progress Reports
+
+Go to Reports → Progress Reports.
+
+Generate:
+
+Critical Tasks → Tasks on the critical path that affect project completion
+
+Milestone Report → Shows completion status of all milestones
+
+Slipping Tasks → Tasks that are behind schedule compared to the baseline
+
+Step 11: Create Dashboard
+
+Go to Dashboard → Add Widget.
+
+Add widgets for:
+
+Cost Overview → shows total project cost and cost status
+
+Task Progress → % complete, upcoming tasks
+
+Critical Tasks → highlights tasks affecting project schedule
+
+Upcoming Milestones → track important dates
+
+Arrange widgets visually for a project snapshot.
+
+Step 12: Review and Monitor
+
+Update % Complete regularly for tasks.
+
+Check Critical Path to prevent delays.
+
+Monitor resource allocation and costs.
+
+Export dashboard and reports as PDF/Excel for submission.
