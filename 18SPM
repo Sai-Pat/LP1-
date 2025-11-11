@@ -1,0 +1,124 @@
+🧭 Step 1: Create the Project
+
+Log in to ProjectManager.com
+ and open your workspace.
+
+On the left sidebar, click Projects → New Project.
+
+Enter:
+
+Project Name: Railway Reservation System
+
+Start Date: (Pick today’s date or the one given by your instructor)
+
+Optionally set an End Date if you know roughly when you want the project to finish.
+
+Click Create.
+
+🧱 Step 2: Identify and Define Project Tasks
+
+These are the major work items for your system.
+You can use these as a starting list (you’ll enter them as tasks):
+
+#	Task Name	Description (optional)
+1	Project Initiation	Define objectives, scope, and stakeholders
+2	Requirements Gathering	Collect system and user requirements
+3	System Design	Create architecture, database, and UI design
+4	Development	Build the system modules
+5	Testing	Perform unit, integration, and user acceptance tests
+6	Deployment	Deploy system on live environment
+7	Training & Documentation	Train staff and prepare manuals
+8	Project Closure	Final review and project handover
+
+Add these in the “Gantt” or “Task List” view.
+
+⏳ Step 3: Define Duration for Each Task
+
+Click in the Duration column beside each task.
+Here’s an example (you can adjust based on project scale):
+
+Task	Duration
+Project Initiation	3 days
+Requirements Gathering	5 days
+System Design	7 days
+Development	15 days
+Testing	7 days
+Deployment	3 days
+Training & Documentation	4 days
+Project Closure	2 days
+🎯 Step 4: Define Milestones
+
+Milestones mark major achievements (zero-duration tasks).
+Add these below your relevant tasks:
+
+Milestone Name	Linked Task	Duration
+Requirements Approved	After Requirements Gathering	0 days
+Design Completed	After System Design	0 days
+System Live	After Deployment	0 days
+Project Closed	After Project Closure	0 days
+
+In ProjectManager, you can mark a task as a milestone by setting its duration to 0 days or checking the Milestone box.
+
+🔗 Step 5: Define Dependencies Between Tasks
+
+Dependencies show task order (e.g., Design starts after Requirements Gathering).
+In the Gantt view, you can drag the connector line between tasks or use the Predecessor column.
+
+Example sequence:
+
+1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
+
+
+Milestones depend on their preceding task (e.g., Requirements Approved depends on task 2).
+
+📅 Step 6: Define the Project Calendar
+
+Go to Settings → Calendars.
+
+Set working days (e.g., Monday–Friday) and working hours (e.g., 9 AM–5 PM).
+
+Add holidays or non-working days if needed.
+
+Save and apply this calendar to your Railway Reservation System project.
+
+👥 Step 7: Define Project Resources and Resource Types
+
+Go to Resources → Add Resource.
+
+Examples:
+
+Resource Name	Type
+Project Manager	Work
+System Analyst	Work
+Developer	Work
+Tester	Work
+Trainer	Work
+Server	Material
+
+“Work” = people or time-based effort
+“Material” = items or equipment
+
+🧩 Step 8: Assign Resources to Tasks
+
+In the Task List, click the Resource column and assign appropriate people:
+
+Task	Assigned Resource
+Project Initiation	Project Manager
+Requirements Gathering	System Analyst
+System Design	System Analyst, Developer
+Development	Developer
+Testing	Tester
+Deployment	Developer
+Training & Documentation	Trainer
+Project Closure	Project Manager
+📊 Step 9: Baseline the Project
+
+A baseline freezes the current plan so you can later compare actual progress.
+
+In ProjectManager:
+
+Go to the Gantt view.
+
+Click the “…” (More options) menu.
+
+Choose Set Baseline → Save Baseline.
