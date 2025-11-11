@@ -1,11 +1,12 @@
 import java.util.*;
 
-public class PassTwoMacroProcessor {
+public class TinyPassTwoMacroProcessor {
     public static void main(String[] args) {
-        // ---------- PASS-I TABLES (assume generated earlier) ----------
+
+        // ---------- PASS-I TABLES ----------
         // Macro Name Table (MNT)
         Map<String, Integer> MNT = new HashMap<>();
-        MNT.put("INCR", 0); // macro starts at MDT index 0
+        MNT.put("INCR", 0); // Macro INCR starts at MDT index 0
 
         // Macro Definition Table (MDT)
         List<String> MDT = new ArrayList<>();
@@ -21,30 +22,28 @@ public class PassTwoMacroProcessor {
             "END"
         };
 
-        // ---------- PASS-II BEGINS ----------
+        // ---------- PASS-II: EXPAND MACROS ----------
         System.out.println("----- EXPANDED SOURCE CODE -----");
         for (String line : program) {
+            line = line.trim();
             String[] parts = line.split("[ ,]+");
             String opcode = parts[0];
 
-            // If line is a macro call
+            // If the line is a macro call
             if (MNT.containsKey(opcode)) {
                 int MDTIndex = MNT.get(opcode);
 
-                // Build ALA (Actual Argument List)
+                // Build Actual Argument List (ALA)
                 Map<Integer, String> ALA = new HashMap<>();
-                if (parts.length > 1) {
-                    String[] args = Arrays.copyOfRange(parts, 1, parts.length);
-                    for (int i = 0; i < args.length; i++) {
-                        ALA.put(i + 1, args[i]); // (P,1) -> NUM1, (P,2) -> NUM2
-                    }
+                for (int i = 1; i < parts.length; i++) {
+                    ALA.put(i, parts[i]); // (P,1) -> NUM1, (P,2) -> NUM2
                 }
 
-                // Expand macro from MDT until MEND
+                // Expand macro instructions until MEND
                 while (!MDT.get(MDTIndex).equals("MEND")) {
                     String mdtLine = MDT.get(MDTIndex);
 
-                    // Replace (P,n) with actual argument
+                    // Replace formal parameters with actual arguments
                     for (Map.Entry<Integer, String> e : ALA.entrySet()) {
                         mdtLine = mdtLine.replace("(P," + e.getKey() + ")", e.getValue());
                     }
@@ -52,18 +51,17 @@ public class PassTwoMacroProcessor {
                     System.out.println(mdtLine);
                     MDTIndex++;
                 }
-            } 
-            else {
-                // Normal assembler line – print as is
+            } else {
+                // Non-macro line – print as is
                 System.out.println(line);
             }
         }
     }
 }
 
-SAMPLE OUTPUT
 
-  ----- EXPANDED SOURCE CODE -----
+
+----- EXPANDED SOURCE CODE -----
 START 100
 MOVER AREG,NUM1
 ADD AREG,NUM2
