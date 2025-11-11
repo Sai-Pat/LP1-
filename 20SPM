@@ -1,0 +1,123 @@
+Step 1: Create the Project
+
+Log in to ProjectManager.com
+.
+
+Click Projects → New Project.
+
+Enter:
+
+Project Name: Library Management System
+
+Start Date: (choose your planned start date)
+
+Click Create Project.
+
+Step 2: Define Tasks
+
+Switch to Gantt View and add the main tasks:
+
+#	Task Name	Duration (days)	Notes
+1	Project Initiation	2	Define scope, stakeholders
+2	Requirements Gathering	5	Library features, user roles
+3	System Design	6	Database, UI/UX
+4	Development	12	Coding catalog, user management, search
+5	Testing	5	Functional, integration, UAT
+6	Deployment	3	Go live
+7	Training & Documentation	3	Train staff, manuals
+8	Project Closure	2	Final review, handover
+Step 3: Define Dependencies
+
+Link tasks in Gantt View so tasks follow the correct order:
+
+Project Initiation → Requirements Gathering → System Design → Development → Testing → Deployment → Training & Documentation → Project Closure
+
+
+In ProjectManager.com, drag from the end of one task to the start of the next to create dependencies.
+
+Step 4: Assign Resources
+
+Go to Resources → Add Resource.
+
+Example resources:
+
+Resource Name	Type
+Project Manager	Work
+System Analyst	Work
+Developer	Work
+Tester	Work
+Trainer	Work
+
+Assign resources to tasks:
+
+Task	Assigned Resource
+Project Initiation	Project Manager
+Requirements Gathering	System Analyst
+System Design	System Analyst, Developer
+Development	Developer
+Testing	Tester
+Deployment	Developer
+Training & Documentation	Trainer
+Project Closure	Project Manager
+Step 5: Set Milestones
+
+Add 0-day tasks as milestones:
+
+Milestone	After Task
+Requirements Approved	Requirements Gathering
+Design Completed	System Design
+System Live	Deployment
+Project Closed	Project Closure
+Step 6: Define Project Calendar
+
+Go to Settings → Calendar.
+
+Set:
+
+Working days: Monday–Friday
+
+Working hours: 9 AM – 5 PM
+
+Holidays: as needed
+
+Apply to project.
+
+Step 7: Baseline the Project
+
+In Gantt → More Options → Set Baseline, save your plan.
+
+This will allow comparison of planned vs actual later.
+
+Step 8: Generate Dashboard
+
+Go to Dashboard → Add Widget.
+
+Add these widgets for the Library Management System project:
+
+Project Overview → % complete, tasks completed, in-progress, upcoming
+
+Cost Overview → planned cost vs actual cost (requires resource cost assigned)
+
+Upcoming Tasks → tasks due soon
+
+Arrange them visually for a clear snapshot.
+
+Step 9: Generate Resource Reports
+
+Go to Reports → Resource Reports.
+
+Generate:
+
+Over-Allocated Resources → highlights team members assigned too much work
+
+Resource Overview → shows each resource, hours assigned, availability
+
+Optionally export reports as PDF or Excel for submission.
+
+Step 10: Monitor and Update
+
+Update % Complete regularly for each task.
+
+Check Dashboard to track progress and costs.
+
+Use Resource Reports to rebalance workload if someone is over-allocated
